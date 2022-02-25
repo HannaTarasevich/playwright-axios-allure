@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/mocha.spec.js",
+    "testMocha": "mocha tests/mocha.spec.js",
     "runIPhone11": "npx playwright codegen --device=\"iPhone 11\" wikipedia.org",
     "runFirefox": "npx playwright test --project=firefox",
     "runHeaded": "npx playwright test --headed",
@@ -12,7 +12,7 @@
     "showReport": "npx playwright show-report",
     "writeTestToFile": "npx playwright codegen --target javascript -o example.js https://testingbot.com",
     "writeTestToPopUp": "npx playwright codegen wikipedia.org ",
-    "writeTestWithManualStart": "node helpers/manualRecordingStart.js"
+    "writeTestWithManualStart": "node helpers/manualStart.js"
   },
   "keywords": [],
   "author": "",
