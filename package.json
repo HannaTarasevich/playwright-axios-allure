@@ -1,0 +1,26 @@
+{
+  "name": "playwright-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/mocha.spec.js",
+    "runIPhone11": "npx playwright codegen --device=\"iPhone 11\" wikipedia.org",
+    "runFirefox": "npx playwright test --project=firefox",
+    "runHeaded": "npx playwright test --headed",
+    "runHeadless": "npx playwright test",
+    "showReport": "npx playwright show-report",
+    "writeTestToFile": "npx playwright codegen --target javascript -o example.js https://testingbot.com",
+    "writeTestToPopUp": "npx playwright codegen wikipedia.org ",
+    "writeTestWithManualStart": "node helpers/manualRecordingStart.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.19.2",
+    "chai": "^4.3.6",
+    "jshint": "^2.13.4",
+    "mocha": "^9.2.1"
+  }
+}
