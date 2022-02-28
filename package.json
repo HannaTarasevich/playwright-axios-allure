@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
     "runIPhone11": "npx playwright codegen --device=\"iPhone 11\" wikipedia.org",
     "runFirefox": "npx playwright test --project=firefox",
     "runHeaded": "npx playwright test --headed",
@@ -11,13 +13,19 @@
     "showReport": "npx playwright show-report",
     "writeTestToFile": "npx playwright codegen --target javascript -o exampleToFile.js https://testingbot.com",
     "writeTestToPopUp": "npx playwright codegen wikipedia.org ",
-    "writeTestWithManualStart": "node helpers/manualStart.js"
+    "writeTestWithManualStart": "node src/helpers/manualStart.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.19.2",
-    "chai": "^4.3.6"
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "chai": "^4.3.6",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
   }
 }
