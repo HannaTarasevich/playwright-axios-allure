@@ -1,13 +1,9 @@
 node_modules/
-test-results/
-playwright-report/
 coverage/
 .nyc_output/
 test-results/
 playwright-report/
-test-results/
-playwright-report/
-test-results/
-playwright-report/
-test-results/
-playwright-report/
+.idea
+allure-results/
+allure-report/
+
