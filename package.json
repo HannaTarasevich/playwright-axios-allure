@@ -8,7 +8,8 @@
     "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
     "runIPhone11": "npx playwright codegen --device=\"iPhone 11\" wikipedia.org",
     "runFirefox": "npx playwright test --project=firefox",
-    "runAPI": "npx playwright test API --project=chrome",
+    "runAPI": "npx playwright test API --project=firefox",
+    "runDataDriven": "npx playwright test dataDriven",
     "runHeaded": "npx playwright test --headed",
     "runHeadless": "npx playwright test",
     "showReport": "npx playwright show-report",
@@ -32,5 +33,8 @@
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
   }
 }
