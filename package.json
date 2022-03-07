@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "allureGenerateReport": "allure generate ./allure-results --clean",
+    "allureOpenReport": "allure open ./allure-report",
     "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
     "runIPhone11": "npx playwright codegen --device=\"iPhone 11\" wikipedia.org",
